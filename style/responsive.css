@@ -2,23 +2,48 @@
     header .container{
         display: flex;
         flex-direction: column;
+
     }
 
-    .botao {
-        
+    header .container a {
+        padding-bottom: 10px;
     }
 }
 
 @media screen and (min-width: 1000px) {
-    .descricao {
+    .filme-principal .container {
         width: 50%;
     }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 559px) {
+    .filme-principal .container {
+        width: auto;
+    } 
     .botao{
-        width: 200px;
-        margin-top: 10px;
+        width: 45%;
+        margin: 10px;
         height: 60px;
+    }
+
+    .botoes {
+        margin: 0;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+}
+
+@media screen and (max-width: 450px) {
+    .botoes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao {
+        margin: 8px;
+        width: auto;
     }
 }
