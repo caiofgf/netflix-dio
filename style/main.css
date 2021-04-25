@@ -1,4 +1,4 @@
-:root {
+:root { /*variaveis*/
     --vermelho: #E50914;
     --preto: #141414;
 }
@@ -9,16 +9,19 @@
     box-sizing: border-box; /*define como fixo o tamanho das divs*/
 }
 
+/*elementos base*/
+
 body {
     background: var(--preto);
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 
 header .container {
     display: flex; /*disposição dos elementos*/
     flex-direction: row; /*dispões todos os elementos em linha*/
-    align-items: center; /*alinha os elementos verticalmente no centro*/
+    align-items: center; /*alinha os elementos na direção do flex-direction*/
     justify-content: space-between; /*alinha os elementos com o espaço livre entre eles*/
 
 
@@ -39,4 +42,25 @@ header nav a {
 
 header nav a:hover {
     color: #fff;
+}
+
+/*filme principal*/
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0, .5) 100%), url('../img/capa-unidade-basica.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; /*deixa todos os elementos filhos em coluna*/
+    justify-content: center;
+    align-items: flex-start; /*elementos começam na esquerda*/
+}
+
+.filme-principal .descricao {
+    margin-bottom: 90px;
+}
+
+.titulo {
+    font-size: 40px;
+    text-transform: uppercase;
 }
