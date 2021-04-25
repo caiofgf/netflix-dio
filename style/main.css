@@ -24,7 +24,10 @@ header .container {
     align-items: center; /*alinha os elementos na direção do flex-direction*/
     justify-content: space-between; /*alinha os elementos com o espaço livre entre eles*/
 
+}
 
+.container {
+    margin: 0 15px;
 }
 
 header .logo{
@@ -87,4 +90,8 @@ header nav a:hover {
 
 .botao i {
     margin-right: 5px;
+}
+
+.filme-principal .container {
+    width: 70%
 }
