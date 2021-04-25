@@ -114,3 +114,7 @@ header nav a:hover {
 .carrossel-filmes {
     margin-top: 5px;
 }
+
+.owl-dots {
+    display: none;
+}
